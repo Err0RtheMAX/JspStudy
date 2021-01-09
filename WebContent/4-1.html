@@ -2,9 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>입력값 받기</title>
 </head>
 <body>
+
+<form action="4-2.jsp" method="get">
+<!-- get 방식으로 받으므로 URL 부분에 어떤 값을 받았는지 노출이 된다 -->
+	국어: <input type="text" name="kor"><br>
+	<!-- input 태그로 텍스트 입력 받고 4-2.jsp의 request.getParameter kor 부분으로 텍스트를 넘겨준다 -->
+	수학: <input type="text" name="math"><br>
+	영어: <input type="text" name="eng"><br>
+	<input type="submit" value="확인">
+
+</form>
 
 </body>
 </html>
