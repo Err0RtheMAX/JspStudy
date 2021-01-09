@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력값 받기</title>
+</head>
+<body>
+
+<form action="4-2.jsp" method="post">
+<!-- post 방식으로 받으므로 URL 부분에 어떤 값을 받았는지 노출이 되지 않으므로 보안으로부터 안전하다 -->
+	국어: <input type="text" name="kor"><br>
+	<!-- input 태그로 텍스트 입력 받고 4-2.jsp의 request.getParameter kor 부분으로 텍스트를 넘겨준다 -->
+	수학: <input type="text" name="math"><br>
+	영어: <input type="text" name="eng"><br>
+	<input type="submit" value="확인">
+
+</form>
+
+</body>
+</html>
